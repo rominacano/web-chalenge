@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/splide.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <main class="slide_container">
+    <div class="text-layout">
+      <h1>Slider compuesto</h1>
+    </div>
+
+    <div class="div-1">
+      <button type="button" class="btn btn-primary button" onclick="location.href='./index.html'">
+        Volver
+      </button>
+      <hr>
+    </div>
+
+    <section id="splide" class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev arrow_back">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <button class="splide__arrow splide__arrow--next arrow_next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <section id="splide2" class="splide" aria-label="Splide Basic HTML Example">
+              <ul class="splide__pagination pagination_slider"></ul>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                  <div class="slide_info_container">
+                    <h6 class="slide_subtitle">Highlights</h6>
+                    <h1 class="slide_title">Grind your part in a single set-up</h1>
+                    <p class="slide_text">The LO pertorms multiple grinding and measuring operations in a
+                      sIngle set-up, so you can start and finish your part in the same cycle. Combine several grinding
+                      Wheelheads and avoid stopping the machine for each operation. Which ones do you choose?
+                      External. faces. cones. unround. contours. inte
+                      It you need to grind multiple parts on a single machine, the LG has
+                      also elements to change references quickly: movable tailstock, automation systems, counter
+                      heads...</p>
+                    <h6 class="slide_page">1/3</h6>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="img/s1.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="img/s2.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="img/s3.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="splide__slide">
+            <section id="splide3" class="splide" aria-label="Splide Basic HTML Example">
+              <ul class="splide__pagination pagination_slider"></ul>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                  <div class="slide_info_container">
+                    <h6 class="slide_subtitle">Highlights</h6>
+                    <h1 class="slide_title">Lorem ipsum title 2</h1>
+                    <p class="slide_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem non nisi eaque quis
+                      aliquam dolorum recusandae dicta veniam atque dignissimos harum distinctio esse sapiente ipsa voluptate,
+                      dolor beatae odit eveniet. inte
+                      It you need to grind multiple parts on a single machine, the LG has
+                      also elements to change references quickly: movable tailstock, automation systems, counter
+                      heads...</p>
+                    <h6 class="slide_page">2/3</h6>
+                  </div>
+                </div>
+                <div class="col col-lg-7">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="img/1.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="img/2.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="img/3.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li class="splide__slide">
+            <section id="splide4" class="splide" aria-label="Splide Basic HTML Example">
+              <ul class="splide__pagination pagination_slider"></ul>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                  <div class="slide_info_container">
+                    <h6 class="slide_subtitle">Highlights</h6>
+                    <h1 class="slide_title">Lorem ipsum title 3</h1>
+                    <p class="slide_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem non nisi eaque quis
+                      aliquam dolorum recusandae dicta veniam atque dignissimos harum distinctio esse sapiente ipsa voluptate,
+                      dolor beatae odit eveniet. inte
+                      It you need to grind multiple parts on a single machine, the LG has
+                      also elements to change references quickly: movable tailstock, automation systems, counter
+                      heads...</p>
+                    <h6 class="slide_page">3/3</h6>
+                  </div>
+                </div>
+                <div class="col col-lg-7">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="img/4.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="img/5.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="img/6.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var outerSlider = new Splide('#splide', {
+        height: '73rem',
+        autoHeight: true,
+        pagination: false,
+      });
+      var innerSlider = new Splide('#splide2', {
+        height: '35rem',
+        autoHeight: true,
+        gap: '1rem',
+        drag: false,
+        arrows: false,
+        cover: true,
+      });
+      var innerSlider2 = new Splide('#splide3', {
+        height: '35rem',
+        gap: '1rem',
+        drag: false,
+        arrows: false,
+        cover: true,
+      });
+      var innerSlider3 = new Splide('#splide4', {
+        height: '35rem',
+        gap: '1rem',
+        drag: false,
+        arrows: false,
+        cover: true,
+      });
+      outerSlider.mount();
+      innerSlider.mount();
+      innerSlider2.mount();
+      innerSlider3.mount();
+    });
+  </script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/splide.min.js"></script>
+</body>
+
+</html>
